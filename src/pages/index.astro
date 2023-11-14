@@ -5,9 +5,41 @@ import {formatOrdinals} from "@/utils/formatOrdinals";
 
 <Layout title="JavaZone 2024">
     <main>
-        <h1>JavaZone 2024</h1>
-        <p>September {formatOrdinals(4)}-{formatOrdinals(5)} 2024 in Oslo Spektrum, Norway</p>
-        <p>Conference: September {formatOrdinals(4)}-{formatOrdinals(5)}</p>
-        <p>Workshops: September {formatOrdinals(3)}</p>
+        <section>
+            <h1>JavaZone 2024</h1>
+            <p>September {formatOrdinals(4)}-{formatOrdinals(5)} 2024 in Oslo Spektrum, Norway</p>
+            <p>Conference: September {formatOrdinals(4)}-{formatOrdinals(5)}</p>
+            <p>Workshops: September {formatOrdinals(3)}</p>
+            <p>More info coming soon...</p>
+        </section>
     </main>
 </Layout>
+
+<style>
+    body {
+        background-image: url("../images/main-area.jpg");
+        backdrop-filter: blur(3px);
+    }
+
+    main {
+        height: 100dvh;
+        flex-direction: column;
+        gap: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        display: grid;
+        gap: 1rem;
+        padding: 2rem;
+        background: wheat;
+        color: black;
+        box-shadow: 1px 1px 1000px lightgray;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+</style>
