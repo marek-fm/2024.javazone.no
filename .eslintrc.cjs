@@ -3,7 +3,7 @@ module.exports = {
     extends: [
         // ...
         "plugin:astro/recommended",
-        "plugin:jsx-a11y/strict"
+        "plugin:jsx-a11y/strict",
     ],
     // ...
     overrides: [
@@ -25,4 +25,4 @@ module.exports = {
         },
         // ...
     ],
-}
+};
