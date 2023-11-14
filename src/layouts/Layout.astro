@@ -20,7 +20,41 @@ const { title } = Astro.props;
     </body>
 </html>
 <style is:global>
+    /* makes sizing simpler */
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    /* remove default spacing */
+    /* force styling of type through styling, rather than elements */
+
+    * {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+    }
+
+
     html {
+        color-scheme: dark light; /* dark mode user-agent-styles */
         font-family: system-ui, sans-serif;
+    }
+
+    /* min body height */
+
+    body {
+        min-height: 100vh;
+    }
+
+    /* responsive images/videos */
+    img,
+    picture,
+    svg,
+    video {
+        display: block;
+        max-width: 100%;
     }
 </style>
