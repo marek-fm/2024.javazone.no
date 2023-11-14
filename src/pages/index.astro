@@ -1,9 +1,13 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import {formatOrdinals} from "@/utils/formatOrdinals";
 ---
 
 <Layout title="JavaZone 2024">
     <main>
         <h1>JavaZone 2024</h1>
+        <p>September {formatOrdinals(4)}-{formatOrdinals(5)} 2024 in Oslo Spektrum, Norway</p>
+        <p>Conference: September {formatOrdinals(4)}-{formatOrdinals(5)}</p>
+        <p>Workshops: September {formatOrdinals(3)}</p>
     </main>
 </Layout>

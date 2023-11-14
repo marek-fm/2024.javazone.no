@@ -1,9 +1,20 @@
 module.exports = {
+    parserOptions: {
+        project: true,
+        ecmaVersion: "latest",
+        parser: "@typescript-eslint/parser",
+        sourceType: "module",
+    },
+    env: {
+        browser: true,
+        es2020: true,
+    },
     // ...
     extends: [
         // ...
         "plugin:astro/recommended",
         "plugin:jsx-a11y/strict",
+        'plugin:@typescript-eslint/recommended-type-checked',
     ],
     // ...
     overrides: [
