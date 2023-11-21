@@ -16,6 +16,7 @@ resource "vercel_project" "javazone-project" {
     name = "2024-javazone-no"
     framework = "astro"
     git_repository = {
+        production_branch = "main"
         type = "github"
         repo = "javaBin/2024.javazone.no"
     }
@@ -24,5 +25,4 @@ resource "vercel_project" "javazone-project" {
 resource "vercel_project_domain" "javazone-domain" {
     domain     = "2024.javazone.no"
     project_id = vercel_project.javazone-project.id
-
 }
