@@ -155,7 +155,7 @@ const $$Image = createComponent(async ($$result, $$props, $$slots) => {
     additionalAttributes.srcset = image.srcSet.attribute;
   }
   return renderTemplate`${maybeRenderHead()}<img${addAttribute(image.src, "src")}${spreadAttributes(additionalAttributes)}${spreadAttributes(image.attributes)}>`;
-}, "/Users/tanettrimas/dev/repos/contrib/2024.javazone.no/node_modules/.pnpm/astro@3.5.4_typescript@5.2.2/node_modules/astro/components/Image.astro", void 0);
+}, "/Users/tanettrimas/dev/javabin/2024.javazone.no/node_modules/.pnpm/astro@3.5.4_typescript@5.2.2/node_modules/astro/components/Image.astro", void 0);
 
 const $$Astro = createAstro();
 const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
@@ -195,10 +195,10 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
     const srcsetAttribute = props.densities || !props.densities && !props.widths ? `${image.src}${image.srcSet.values.length > 0 ? ", " + image.srcSet.attribute : ""}` : image.srcSet.attribute;
     return renderTemplate`<source${addAttribute(srcsetAttribute, "srcset")}${addAttribute("image/" + image.options.format, "type")}${spreadAttributes(sourceAdditionaAttributes)}>`;
   })} <img${addAttribute(fallbackImage.src, "src")}${spreadAttributes(imgAdditionalAttributes)}${spreadAttributes(fallbackImage.attributes)}> </picture>`;
-}, "/Users/tanettrimas/dev/repos/contrib/2024.javazone.no/node_modules/.pnpm/astro@3.5.4_typescript@5.2.2/node_modules/astro/components/Picture.astro", void 0);
+}, "/Users/tanettrimas/dev/javabin/2024.javazone.no/node_modules/.pnpm/astro@3.5.4_typescript@5.2.2/node_modules/astro/components/Picture.astro", void 0);
 
 const imageConfig = {"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[]};
-					new URL("file:///Users/tanettrimas/dev/repos/contrib/2024.javazone.no/.vercel/output/static/");
+					new URL("file:///Users/tanettrimas/dev/javabin/2024.javazone.no/.vercel/output/static/");
 					const getImage = async (options) => await getImage$1(options, imageConfig);
 
 async function loadRemoteImage(src) {
@@ -256,4 +256,4 @@ const generic = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	GET
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { Mime_1 as M, generic as a, commonjsGlobal as c, getDefaultExportFromCjs as g, standard as s };
+export { $$Image as $, Mime_1 as M, generic as a, commonjsGlobal as c, getDefaultExportFromCjs as g, standard as s };
