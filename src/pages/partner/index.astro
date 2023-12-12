@@ -1,0 +1,167 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import {Image} from "astro:assets"
+---
+
+<Layout title="JavaZone 2024 Partner">
+    <main>
+        <article>
+            <h1>JavaZone 2024 Partner</h1>
+            <section>
+                <h2>Partner meeting</h2>
+                <div style="position:relative;">
+                    <iframe title="JavaZone 2024 partner meeting video"
+                            src="https://player.vimeo.com/video/891500045?h=7df20a26e4" width="640" height="360"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <p><a href="https://vimeo.com/891500045">JavaZone 2024 Partner Meeting #1</a> from <a
+                        href="https://vimeo.com/user125589327">Macsimum AS</a> on <a href="https://vimeo.com">Vimeo</a>.
+                    </p></div>
+                <script is:inline src="https://player.vimeo.com/api/player.js"></script>
+                <p><a
+                    href="https://www.dropbox.com/scl/fi/wivcmqsj9a5058p8s3qcj/JZ2024PartnermeetingOne.pdf?rlkey=48d1t09xcfjqts9kfytk7aegb&dl=0">Slides
+                    from the partner meeting</a>
+                </p>
+            </section>
+
+            <section>
+                <h2>Partner registration</h2>
+                <p>Partner registration opens <b>January 15th 2024 at 10:00</b> Registration is done by using the a link
+                    on this page.</p>
+                <p>Even though all partners are considered equal, there are a few options to choose from. There is a
+                    base package that everyone gets, and then there are a few available expansions. Note that these
+                    expansions have limited availability.</p>
+                <p>Partner packages (both the standard package and the expansion options) are sold first come first
+                    served starting January 15th and as long as there are still packages left.</p>
+            </section>
+
+            <section>
+                <h2>Partner packages</h2>
+                <p>If you have any questions, please send us a mail at <a href="mailto:partner@java.no">partner@java.no</a></p>
+                <div class="packages">
+                    <section class="package">
+                        <h3>Standard package</h3>
+                        <div>
+                            <p class="bold">Price</p>
+                            <p>95 000,- NOK ex VAT</p>
+                        </div>
+                        <Image class="stand-image" alt="hello" src="/images/standard-stand.png" width="800" height="450" />
+                        <p class="bold">Stand</p>
+                        <p>6 square meters (3x2) with back and side wall, in the main conference hall.</p>
+
+                        <p class="bold">Profiling</p>
+                        <p>Logo with link on homepage and profiling in Oslo Spectrum</p>
+                        <p class="bold">Stand ticket</p>
+                        <p>4 flexible tickets for stand personnel.</p>
+                        <p class="bold">Particiant tickets</p>
+                        <p>Partner price on tickets for your colleagues</p>
+
+                    </section>
+                    <section class="package">
+                        <h3>Concept stand</h3>
+                        <div>
+                            <p class="bold">Additional price</p>
+                            <p>78 000,- NOK ex VAT</p>
+                        </div>
+                        <Image class="stand-image" alt="hello" src="/images/concept-stand.png" width="800" height="450" />
+                        <p>All the benefits of the standard package.</p>
+                        <p>Stand of 48 square meters (8X6 m)</p>
+                        <p>Large space for showing off your own concept</p>
+                        <p>Extremely limited – only <span class="bold">2</span> available</p>
+
+                    </section>
+                    <section class="package">
+                        <h3>Restaurant stand</h3>
+                        <div>
+                            <p class="bold">Additional price</p>
+                            <p>85 000,- NOK ex VAT</p>
+                        </div>
+                        <Image class="stand-image" alt="hello" src="/images/restaurant-stand.png" width="800" height="450" />
+
+                        <p>All the benefits of the standard package with a restaurant stand</p>
+                        <p>24 square meters (6x4 m) with a connected restaurant</p>
+                        <p>Contious food serving from your stand throughout the conference.</p>
+                        <p>Menu in cooperation with event partners.</p>
+                    </section>
+                    <section class="package partner-tickets">
+                        <h3>Partner tickets</h3>
+                        <p>Order from March 1st until May 15th</p>
+                        <p>Round robin distribution on tickets ordered by May 15th</p>
+                        <p>First come first served if tickets are still left after May 15th</p>
+                        <div>
+                            <p class="bold">Additional price</p>
+                            <p>7 990,- NOK ex VAT</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </article>
+    </main>
+</Layout>
+
+<style>
+    body {
+        background: wheat;
+        color: black;
+    }
+
+    main {
+        margin: 2rem;
+    }
+
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        word-wrap: break-word;
+
+        line-height: 1.6rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .package {
+        margin: 1rem 0;
+        background: blanchedalmond;
+        border-radius: 16px;
+    }
+
+    @media screen and (min-width: 1400px) {
+        .packages {
+            display: grid;
+            gap: 0.5rem;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1rem 0;
+        }
+
+        .package {
+            gap: 1rem;
+            margin: 0;
+            display: grid;
+            align-content: baseline;
+        }
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .partner-tickets {
+        grid-column: 1 / end;
+    }
+
+    .stand-image {
+        object-fit: cover;
+    }
+</style>
