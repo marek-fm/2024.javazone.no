@@ -36,6 +36,7 @@ import {Image} from "astro:assets"
 
             <section>
                 <h2>Partner packages</h2>
+                <p>If you have any questions, please send us a mail at <a href="mailto:partner@java.no">partner@java.no</a></p>
                 <div class="packages">
                     <section class="package">
                         <h3>Standard package</h3>
@@ -92,10 +93,7 @@ import {Image} from "astro:assets"
                         </div>
                     </section>
                 </div>
-
-
             </section>
-
         </article>
     </main>
 </Layout>
@@ -134,7 +132,7 @@ import {Image} from "astro:assets"
     }
 
     .package {
-        margin: 1rem;
+        margin: 1rem 0;
         background: blanchedalmond;
         border-radius: 16px;
     }
@@ -144,7 +142,7 @@ import {Image} from "astro:assets"
             display: grid;
             gap: 0.5rem;
             grid-template-columns: repeat(3, 1fr);
-            margin: 0;
+            margin: 1rem 0;
         }
 
         .package {
