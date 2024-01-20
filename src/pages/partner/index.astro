@@ -23,11 +23,9 @@ import {Image} from "astro:assets"
                     any cancellations</p>
                 <p>You must choose one type of package. Once you complete the registration you will receive a
                     confirmation of your choice. The formal contract and invoice will be sent to you later </p>
-                <p>
-                <p>
-                    <a target="_blank" class="button-style"
-                       href="https://app.checkin.no/event/65953/javazone-2024-partnership">Register here</a>
-                </p>
+                <div class="register-button"><a
+                    href="https://app.checkin.no/event/65953/javazone-2024-partnership">Register here</a></div>
+
             </section>
 
             <section>
@@ -179,5 +177,17 @@ import {Image} from "astro:assets"
 
     .stand-image {
         object-fit: cover;
+    }
+
+    .register-button {
+        display: inline-block;
+        margin-top: 1rem;
+        background: blue;
+        padding: 1rem;
+        border-radius: 8px;
+
+        a {
+            color: white;
+        }
     }
 </style>
